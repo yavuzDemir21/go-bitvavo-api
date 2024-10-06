@@ -46,13 +46,13 @@ This is the Go wrapper for the Bitvavo API. This project can be used to build yo
 ## Installation
 ```
 Get:
-go get github.com/bitvavo/go-bitvavo-api
+go get github.com/yavuzDemir21/go-bitvavo-api
 
 Import:
-import("github.com/bitvavo/go-bitvavo-api")
+import("github.com/yavuzDemir21/go-bitvavo-api")
 
 Run test:
-cd $GOPATH/src/github.com/bitvavo/go-bitvavo-api/example
+cd $GOPATH/src/github.com/yavuzDemir21/go-bitvavo-api/example
 go run main.go
 ```
 
