@@ -1,4 +1,4 @@
-module github.com/bitvavo/go-bitvavo-api
+module github.com/yavuzDemir21/go-bitvavo-api
 
 go 1.19
 
