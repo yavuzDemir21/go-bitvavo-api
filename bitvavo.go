@@ -1,4 +1,4 @@
-package bitvavo
+package main
 
 import (
 	"bytes"

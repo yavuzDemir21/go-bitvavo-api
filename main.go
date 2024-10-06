@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/yavuzDemir21/go-bitvavo-api"
 )
 
 /*
@@ -29,7 +28,7 @@ func PrettyPrint(v interface{}) (err error) {
 }
 
 func main() {
-	bitvavo := bitvavo.Bitvavo{
+	bitvavo := Bitvavo{
 		ApiKey:       "<APIKEY>",
 		ApiSecret:    "<APISECRET>",
 		RestUrl:      "https://api.bitvavo.com/v2",
@@ -44,7 +43,7 @@ func main() {
 	testWebsocket(bitvavo)
 }
 
-func testREST(bitvavo bitvavo.Bitvavo) {
+func testREST(bitvavo Bitvavo) {
 	timeResponse, timeErr := bitvavo.Time()
 	if timeErr != nil {
 		fmt.Println(timeErr)
@@ -250,7 +249,7 @@ func testREST(bitvavo bitvavo.Bitvavo) {
 	// }
 }
 
-func testWebsocket(bitvavo bitvavo.Bitvavo) {
+func testWebsocket(bitvavo Bitvavo) {
 	websocket, errChannel := bitvavo.NewWebsocket()
 
 	timeChannel := websocket.Time()
